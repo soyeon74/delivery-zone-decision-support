@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Streamlit / local app state
+.streamlit/secrets.toml
+.local_work_session/
+.local_cache/
+.cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+~$*
+temp/
+tmp/
+
+# Reports generated from operational data
+outputs/
+reports/private/
+exports/private/
+
+# IMPORTANT: operational / private data must never be committed
+data/raw/**
+data/private/**
+data/operational/**
+data/internal/**
+data/gis_private/**
+
+# Keep only synthetic sample data under data/sample
+!data/sample/
+!data/sample/**
+
+# Common office files are blocked by default in operational areas
+data/**/*.xlsx
+data/**/*.xls
+data/**/*.xlsm
+data/**/*.hwpx
+data/**/*.hwp
+data/**/*.pdf
+
+# But public synthetic CSV sample files are allowed
+!data/sample/*.csv
+!data/sample/README.md
+
+# Geospatial private source bundles
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.geojson
+*.zip
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

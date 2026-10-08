@@ -1,0 +1,13 @@
+{
+  "project": "delivery-zone-decision-support",
+  "release_type": "public_safe_starter",
+  "data_classification": "PUBLIC_SYNTHETIC_ONLY",
+  "contains_real_addresses": false,
+  "contains_personal_data": false,
+  "contains_operational_raw_data": false,
+  "sample_periods": [
+    "2099-01",
+    "2099-02"
+  ],
+  "next_phase": "analysis_engine_and_streamlit_app"
+}
